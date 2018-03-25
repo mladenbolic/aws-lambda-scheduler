@@ -5,6 +5,6 @@
         "Action":[
             "sns:Publish"
         ],
-        "Resource": ["arn:aws:sns:*:*:my-topic*"]
+        "Resource": ["arn:aws:sns:*:*:scheduler-topic"]
     }]
 }

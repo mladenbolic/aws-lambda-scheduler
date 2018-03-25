@@ -1,0 +1,26 @@
+{
+  "name": "aws-lambda-scheduler",
+  "version": "1.0.0",
+  "description": "Lambda function for publishing messages to SNS topics",
+  "main": "lambda-scheduler.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mladenbolic/aws-lambda-scheduler.git"
+  },
+  "keywords": [
+    "AWS Lambda",
+    "AWS SNS",
+    "AWS Cloud Watch",
+    "Scheduler"
+  ],
+  "author": "Mladen Bolic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mladenbolic/aws-lambda-scheduler/issues"
+  },
+  "homepage": "https://github.com/mladenbolic/aws-lambda-scheduler#readme"
+}

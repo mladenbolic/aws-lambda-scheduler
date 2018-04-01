@@ -69,4 +69,4 @@ modules.xml
 *.ipr
 
 # Dependency directories
-node_modules/
+service/node_modules/

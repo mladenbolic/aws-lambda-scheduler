@@ -3,7 +3,7 @@
     "MaximumMessageSize": "262144",
     "MessageRetentionPeriod": "604800",
     "ReceiveMessageWaitTimeSeconds": "5",
-    "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:254308114278:dead_letter_queue\",\"maxReceiveCount\":\"2\"}",
+    "RedrivePolicy": "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:254308114278:service-dead-letter-queue\",\"maxReceiveCount\":\"5\"}",
     "VisibilityTimeout": "30",
-    "Policy":"{  \"Version\":\"2012-10-17\",  \"Id\":\"scheduler-topic-policies\",  \"Statement\":[{      \"Sid\":\"Allow-Send-To-Queue\",      \"Effect\":\"Allow\",      \"Principal\":\"*\",      \"Action\":[\"sqs:SendMessage\"],      \"Resource\":\"*\",      \"Condition\":{        \"ArnEquals\":{          \"aws:SourceArn\":\"arn:aws:sns:us-east-1:254308114278:scheduler-topic}\"        }      }  }]}"
+    "Policy":"{\"Version\":\"2012-10-17\", \"Id\":\"scheduler-topic-policies\", \"Statement\":[{\"Sid\":\"Allow-Send-To-Queue\", \"Effect\":\"Allow\", \"Principal\":\"*\", \"Action\":[\"sqs:SendMessage\"], \"Resource\":\"*\", \"Condition\":{\"ArnEquals\":{\"aws:SourceArn\":\"arn:aws:sns:us-east-1:254308114278:scheduler-topic\"}}}]}"
 }

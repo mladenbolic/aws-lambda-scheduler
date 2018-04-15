@@ -1,5 +1,4 @@
 const AWS = require('aws-sdk');
-const config = require('./config.json');
 
 var queueUrl = 'https://queue.amazonaws.com/254308114278/service-schedule-daily';
 

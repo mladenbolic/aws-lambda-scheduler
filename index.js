@@ -1,4 +1,4 @@
-console.log("Loading function");
+console.log("loading function");
 var AWS = require('aws-sdk');
 
 exports.handler = function(event, context) {
@@ -13,8 +13,7 @@ exports.handler = function(event, context) {
     if (err) {
       console.error('error publishing SNS topic');
       context.fail(err);
-    }
-    else {
+    } else {
       console.info('message published to SNS topic');
       context.done(null, data);
     }
